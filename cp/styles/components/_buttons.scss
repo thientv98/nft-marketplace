@@ -1,0 +1,28 @@
+.MuiButton-root {
+  padding: $button-padding !important;
+  font-size: var(--body-font-size) !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  border-radius: var(--border-radius) !important;
+  height: 38px !important;
+  box-shadow: none !important;
+}
+
+// Styles colors
+.btn-light-primary {
+  background-color: var(--primary-light) !important;
+  color: var(--primary) !important;
+}
+
+.btn-base {
+  color: var(--text-gray-600) !important;
+  background-color: transparent;
+}
+
+// Button sizes
+.MuiButton-sizeSmall {
+  padding: 4px 12px !important;
+  height: 30px !important;
+  font-size: 12px !important;
+  border-radius: 4px !important;
+}

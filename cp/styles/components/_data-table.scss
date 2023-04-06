@@ -1,0 +1,35 @@
+.custom-data-table-wrapper {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  border-radius: var(--border-radius);
+
+  .divider-table {
+    margin-top: 16px;
+    height: 8px;
+    width: 100%;
+    background-color: #2b7489;
+  }
+
+  .MuiTableCell-root {
+    border-color: var(--table-border-color) !important;
+  }
+
+  // Table body
+  .MuiTableBody-root {
+    .MuiTableRow-root {
+      .MuiTableCell-root {
+        cursor: pointer;
+
+        &:hover {
+          color: var(--primary) !important;
+        }
+      }
+    }
+    .no-data-found {
+      .MuiTableCell-root {
+        cursor: default !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "login": "auth/login",
+  "userList": "users",
+  "itemList": "items",
+  "orderList": "orders",
+
+  "forgotPassword": "admins/forgot-password",
+  "postCategories": "post-categories/list",
+  "postList": "posts/list",
+  "postCreate": "posts/create",
+  "postUpdate": "posts/update",
+  "postDelete": "posts/delete",
+
+  "bannerCategories": "banner-categories/list",
+  "bannerList": "banners/list",
+  "bannerCreate": "banners/create",
+  "bannerUpdate": "banners/update",
+  "bannerDelete": "banners/delete",
+
+  "keywordList": "keywords/list",
+  "keywordUpdate": "keywords/update",
+  "keywordDelete": "keywords/delete",
+
+  "commentList": "comments/list",
+  "commentDelete": "comments/delete",
+
+  "noticeList": "notices/list",
+  "noticeCategories": "noti-categories/list",
+  "noticeCreate": "notices/create",
+  "noticeUpdate": "notices/update",
+  "noticeDelete": "notices/delete",
+
+  "reportReasonsList": "report-reasons/list",
+  "reportReasonsCreate": "report-reasons/create",
+  "reportReasonsUpdate": "report-reasons/update",
+  "reportReasonsDelete": "report-reasons/delete",
+
+  "postReportList": "post-reports/list",
+  "postReportDelete": "post-reports/delete",
+  "postReportUpdateStatus": "post-reports/update-status",
+
+  "footerList": "footer-links/list",
+  "footerCreate": "footer-links/create",
+  "footerUpdate": "footer-links/update",
+  "footerDelete": "footer-links/delete",
+  "footerCategories": "footer-link-categories/list",
+
+  "creatorList": "home/creator-ranking",
+  "curatorList": "home/curator-ranking",
+
+  "pageList": "pages/list",
+  "pageDelete": "pages/delete",
+  "pageCreate": "pages/create",
+  "pageUpdate": "pages/update",
+
+  "dashboard": "dashboard/information",
+
+  "uploadImage": "upload/image"
+}

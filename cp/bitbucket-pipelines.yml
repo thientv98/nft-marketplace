@@ -1,0 +1,38 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:lts-alpine
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          deployment: test
+          script:
+            - pipe: atlassian/ssh-run:0.3.0
+              variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SSH_SERVER
+                COMMAND: >
+                  unset DOCKER_HOST &&
+                  echo "Deploy script started" &&
+                  cd /home/demo/www/prism_membership/dev/cp_dev &&
+                  echo "Reset Git" &&
+                  git reset --hard  &&
+                  echo "Start Git Pull" &&
+                  git pull &&
+                  echo "End Git Pull" &&
+
+                  echo "Start yarn install" &&
+                  yarn install  &&
+                  echo "End yarn install"  &&
+                  echo "Start yarn Build"  &&
+                  yarn build  &&
+                  echo "End yarn Build"  &&
+
+                  pm2 delete prism_membership_web_cp || true  &&
+                  pm2 start npm --name "prism_membership_web_cp" -- start -- --port 3041  &&
+                  echo "END Deploy CP"  &&
+                  echo -e '\e[1m\e[34m\nFinish deploy\e[0m\n'

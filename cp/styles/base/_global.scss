@@ -1,0 +1,66 @@
+html {
+  // Layout properties
+  display: flex;
+  flex-direction: column;
+
+  // Box model properties
+  margin: 0px;
+  padding: 0px;
+
+  // Visual properties
+  background-color: var(--app-bg-color);
+
+  body {
+    // Typography properties
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+
+    // Visual properties
+    background-color: var(--app-bg-color);
+    font-family: var(--font-family-base);
+    color: var(--text-dark);
+    margin: 0px;
+  }
+}
+
+// Style link, a
+a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500 !important;
+}
+
+.text-link {
+  text-decoration: underline;
+  color: var(--primary) !important;
+  font-weight: 500 !important;
+}
+
+.MuiDropzoneArea-root {
+  .MuiDropzoneArea-textContainer {
+    margin-bottom: 20px;
+  }
+
+  .MuiDropzoneArea-text {
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .MuiDropzonePreviewList-removeButton {
+    top: 40px;
+    right: 0;
+  }
+}
+
+.cl-success {
+  color: var(--success);
+}
+
+.cl-danger {
+  color: var(--danger);
+}
+
+.text-line-2 {
+  @include textNLine(2);
+}
