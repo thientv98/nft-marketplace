@@ -118,7 +118,7 @@ export const MainSideBar = () => {
   const SideBarChild = (
     <Box id="pr-app-sidebar" className="side-bar-wrapper">
       {/* begin::Logo */}
-      <Box className="side-bar-wrapper--logo">NFT Community</Box>
+      <Box className="side-bar-wrapper--logo">NFT MarketPlace</Box>
       {/* end::logo  */}
       {/* begin::sidebar menu */}
       <Box className="app-sidebar-menu">

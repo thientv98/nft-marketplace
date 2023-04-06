@@ -19,9 +19,9 @@ type MyPageSeoProps = {
  * @param props
  */
 export const HeadPage: React.FC<MyPageSeoProps> = (props) => {
-  const { title = 'Prism', description = 'Default description', noTitleTemplate } = props
+  const { title = 'NFT MarketPlace', description = 'Default description', noTitleTemplate } = props
 
   return (
-    <NextHeadSeo title={noTitleTemplate ? title : `${title} | Prism`} description={description} />
+    <NextHeadSeo title={noTitleTemplate ? title : `${title} | NFT MarketPlace`} description={description} />
   )
 }
